@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Library App</title>
+  </head>
+  <body>
+    <div class="form">
+      <form action="">
+        <div class="titleDiv">
+          <input
+            type="text"
+            name="title"
+            id="title"
+            required
+            minlength="1"
+            placeholder="Title"
+          />
+        </div>
+        <div class="authorDiv">
+          <input
+            type="text"
+            name="author"
+            id="author"
+            required
+            minlength="1"
+            placeholder="Author"
+          />
+        </div>
+        <div class="pagesDiv">
+          <input
+            type="number"
+            name="pages"
+            id="pages"
+            min="0"
+            required
+            placeholder="Number of Pages"
+          />
+        </div>
+        <div class="buttonDiv">
+          <button>Add book</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

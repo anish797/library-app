@@ -4,46 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Library App</title>
   </head>
   <body>
-    <div class="form">
-      <form action="">
-        <div class="titleDiv">
-          <input
-            type="text"
-            name="title"
-            id="title"
-            required
-            minlength="1"
-            placeholder="Title"
-          />
-        </div>
-        <div class="authorDiv">
-          <input
-            type="text"
-            name="author"
-            id="author"
-            required
-            minlength="1"
-            placeholder="Author"
-          />
-        </div>
-        <div class="pagesDiv">
-          <input
-            type="number"
-            name="pages"
-            id="pages"
-            min="0"
-            required
-            placeholder="Number of Pages"
-          />
-        </div>
-        <div class="buttonDiv">
-          <button>Add book</button>
-        </div>
-      </form>
+    <dialog id="myModal">
+      <div class="form">
+        <form id="bookForm" action="">
+          <div class="titleDiv">
+            <input
+              type="text"
+              name="title"
+              id="title"
+              required
+              minlength="1"
+              placeholder="Title"
+            />
+          </div>
+          <div class="authorDiv">
+            <input
+              type="text"
+              name="author"
+              id="author"
+              required
+              minlength="1"
+              placeholder="Author"
+            />
+          </div>
+          <div class="pagesDiv">
+            <input
+              type="number"
+              name="pages"
+              id="pages"
+              min="0"
+              required
+              placeholder="Number of Pages"
+            />
+          </div>
+          <div class="readDiv">
+            <label for="read">Have you read this book?</label>
+            <input type="radio" id="read" name="readStatus" value="read" />
+            <label for="read">Read</label>
+            <input
+              type="radio"
+              id="notRead"
+              name="readStatus"
+              value="not read"
+            />
+            <label for="notRead">Not Read</label>
+          </div>
+          <button id="addCardButton" type="button">Add Card</button>
+        </form>
+      </div>
+    </dialog>
+    <div class="header">library app</div>
+    <div class="body">
+      <button class="addButton">+</button>
     </div>
+    <div class="cards"></div>
   </body>
 </html>
